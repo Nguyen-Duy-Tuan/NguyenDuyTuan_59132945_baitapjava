@@ -16,6 +16,18 @@ public class BaiTap3Main {
      */
     public static void main(String args[]) {
         // TODO code application logic here
-        System.out.println("Hello work tuan");
+          SinhVienPoly svPoly = new SinhVienBiz("Nguyen Duy Tuan","DESIGN",7,8);
+        SinhVienIT svIT = new SinhVienIT( "Ho Thanh Thai","CNTT",6,7,10);
+        SinhVienBiz svBiz = new SinhVienBiz("Ly Tuan Ty","TESTER",1,6);
+        
+        svPoly.xuat();
+        System.out.println("Diem: " + svPoly.getDiem() 
+                + "\nHoc luc: " + svPoly.getHocLuc() + "\n");
+        svIT.xuat();
+        System.out.println("Diem: " + svIT.getDiem() 
+                + "\nHoc luc: " + svIT.getHocLuc() + "\n");
+        svBiz.xuat();
+        System.out.println("Diem: " + svBiz.getDiem() 
+                + "\nHoc luc: " + svBiz.getHocLuc() );
     }
 }
