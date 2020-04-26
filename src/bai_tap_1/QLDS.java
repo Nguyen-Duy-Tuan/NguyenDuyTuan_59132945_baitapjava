@@ -11,7 +11,7 @@ import java.util.ArrayList;
  * @author Admin
  */
 
-public class QLDS extends IQLDS {
+public class QLDS implements IQLDS {
     
     ArrayList<CaNhan> CaNhanN = new ArrayList<>();
     @Override
